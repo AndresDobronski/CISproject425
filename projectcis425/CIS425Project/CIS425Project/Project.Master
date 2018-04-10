@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Project.master.cs" Inherits="CIS425Project.Project" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Project.css" rel="stylesheet" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 82px;
+        }
+        .auto-style2 {
+            height: 24px;
+        }
+        .auto-style3 {
+            height: 24px;
+            width: 412px;
+        }
+        .auto-style4 {
+            margin-top: 8px;
+        }
+        .auto-style6 {
+            margin-top: 3px;
+        }
+        .auto-style7 {
+            height: 24px;
+            width: 482px;
+        }
+        .auto-style8 {
+            height: 24px;
+            width: 113px;
+        }
+        .newStyle1 {
+            font-size: 0px;
+            color: #FFFFFF;
+        }
+        .newStyle2 {
+            color: #FFFFFF;
+        }
+        .auto-style9 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <nav>
+
+        &nbsp;
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Mens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Womens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Kids&nbsp;&nbsp;&nbsp;&nbsp; |</p> </td>
+                    <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="25px" Width="423px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:Button ID="Button1" runat="server" CssClass="auto-style6" Text="Search" Width="99px" />
+                    </td>
+                    <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle2"> Cart&nbsp;
+                        <asp:Image ID="Image1" runat="server" Height="19px" ImageUrl="~/Images/shopping_cart.png" Width="24px" />
+                        </span> </td>
+                </tr>
+            </table>
+
+        </nav>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer class="auto-style9">
+
+        <span class="newStyle3">
+        <br />
+        About Us<br />
+        Contacts<br />
+        </span></footer>
+</body>
+</html>
