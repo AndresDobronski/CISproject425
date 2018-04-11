@@ -55,7 +55,7 @@
         &nbsp;
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Mens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Womens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Kids&nbsp;&nbsp;&nbsp;&nbsp; |</p> </td>
+                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Mens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Womens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Kids&nbsp;&nbsp;&nbsp;&nbsp; |</p> </td>
                     <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="25px" Width="423px"></asp:TextBox>
                     </td>
