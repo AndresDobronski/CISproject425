@@ -7,7 +7,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    Shopping Cart<br />
+    Shopping Cart <br />
     <br />
     <table style="width:100%;">
         <tr>
