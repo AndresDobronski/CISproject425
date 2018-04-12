@@ -20,6 +20,7 @@
         .auto-style3 {
             height: 24px;
             width: 412px;
+            color: white;
         }
         .auto-style4 {
             margin-top: 8px;
@@ -36,7 +37,6 @@
             width: 113px;
         }
         .newStyle1 {
-            font-size: 0px;
             color: #FFFFFF;
         }
         .newStyle2 {
@@ -44,6 +44,9 @@
         }
         .auto-style9 {
             text-align: center;
+        }
+        .newStyle4 {
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -55,7 +58,7 @@
         &nbsp;
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Mens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Womens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Kids&nbsp;&nbsp;&nbsp;&nbsp; |</p> </td>
+                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle4"> Home &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Mens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Womens&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Kids&nbsp;&nbsp;&nbsp;&nbsp; |</span></p> </td>
                     <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="25px" Width="423px"></asp:TextBox>
                     </td>
