@@ -36,7 +36,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1><span class="newStyle4">Contacts</span></h1>
+    <h1>Contacts<span class="newStyle4">ontacts</span></h1>
 &nbsp;
     <table class="auto-style10">
         <tr>

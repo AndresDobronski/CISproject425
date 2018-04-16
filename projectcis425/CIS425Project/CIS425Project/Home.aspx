@@ -6,45 +6,40 @@
         height: 419px;
         margin-top: 0px;
     }
-    .auto-style10 {
-        width: 365px;
-        height: 265px;
+    #Content2 {
+        align-content:center;
     }
-    .auto-style12 {
-        width: 374px;
-        height: 274px;
-        margin-left: 0px;
-    }
-    .auto-style14 {
-        width: 380px;
-        height: 207px;
-    }
-    .auto-style15 {
-        width: 426px;
-        height: 289px;
-    }
-    .auto-style16 {
-        width: 408px;
-        height: 289px;
-    }
-    .auto-style17 {
-        height: 289px;
-    }
-</style>
+        .auto-style18 {
+            text-align: center;
+        }
+        .auto-style19 {
+            width: 417px;
+        }
+        .auto-style20 {
+            width: 407px;
+        }
+        .newStyle5 {
+            position: relative;
+
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/NikeAd.jpg" Width="1160px" />
-<h2>Popular Shoes</h2>
+    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/NikeAd.jpg" Width="100%" Height="790px" />
+<h2 class="auto-style18">Popular Shoes</h2>
 <p>
-    <table style="width:100%;">
+    <table class="newStyle5" style="width:100%;">
         <tr>
-            <td class="auto-style15">
-                <img alt="" class="auto-style10" src="ShoeImages/Adidas-Yeezy-Boost-350-V2-Core-Black-White.jpg" /></td>
-            <td class="auto-style16">
-                <img alt="" class="auto-style12" src="ShoeImages/adidas%20yeezy%20boost%20350%20v2%20beluga-505asx.jpg" /></td>
-            <td class="auto-style17">
-                <img alt="" class="auto-style14" src="ShoeImages/Nike-Free-5.0-side-blue.jpg" /></td>
+            <td class="auto-style19">
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/ShoeImages/Adidas-Yeezy-Boost-350-V2-Core-Black-White.jpg" Width="400px" />
+            </td>
+            <td class="auto-style20">
+                <asp:Image ID="Image4" runat="server" ImageUrl="~/ShoeImages/adidas yeezy boost 350 v2 beluga-505asx.jpg" Width="400px" />
+            </td>
+            <td>
+                <asp:Image ID="Image5" runat="server" ImageUrl="~/ShoeImages/Nike-Free-5.0-side-blue.jpg" Width="400px" Height="200px" />
+            </td>
         </tr>
-        </table>
+    </table>
 </p>
 </asp:Content>
