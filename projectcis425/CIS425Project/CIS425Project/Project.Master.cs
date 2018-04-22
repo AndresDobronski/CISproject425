@@ -16,6 +16,7 @@ namespace CIS425Project
 
         protected void SearchButton_Click(object sender, EventArgs e)
         {
+            string searchWord = SearchbarTextBox.Text;
 
         }
     }
