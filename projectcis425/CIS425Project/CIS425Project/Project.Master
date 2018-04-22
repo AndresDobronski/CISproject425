@@ -20,7 +20,7 @@
         }
         .auto-style3 {
             height: 24px;
-            width: 815px;
+            width: 425px;
             color: white;
         }
         .auto-style4 {
@@ -31,11 +31,11 @@
         }
         .auto-style7 {
             height: 24px;
-            width: 358px;
+            width: 185px;
         }
         .auto-style8 {
             height: 24px;
-            width: 54px;
+            width: 139px;
         }
         .newStyle1 {
             color: #FFFFFF;
@@ -65,25 +65,26 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style3"><p class="newStyle1"><span class="newStyle4">&nbsp;&nbsp;&nbsp;
-                        <img alt="" class="auto-style10" src="Images/3415dd9da8f772127b67b3ad5f43756e.jpg" /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle4">&nbsp;
+                        <img alt="" class="auto-style10" src="Images/3415dd9da8f772127b67b3ad5f43756e.jpg" /></span>&nbsp;&nbsp;<span class="newStyle4">
                         <asp:HyperLink ID="homeHyperLink" runat="server" NavigateUrl="~/Home.aspx" ForeColor="White">Home</asp:HyperLink>
-                        &nbsp;&nbsp; |&nbsp; &nbsp;<asp:HyperLink ID="mensHyperlink" runat="server">Mens</asp:HyperLink>
-                        &nbsp;&nbsp; |&nbsp;&nbsp; 
-                        <asp:HyperLink ID="womensHyperlink" runat="server">Womens</asp:HyperLink>
-                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 
-                        <asp:HyperLink ID="kidsHyperLink" runat="server">Kids</asp:HyperLink>
-                        &nbsp;&nbsp;&nbsp; |</span></p>
+                        &nbsp;&nbsp;|&nbsp; &nbsp;<asp:HyperLink ID="mensHyperlink" runat="server" ForeColor="White" NavigateUrl="~/Mens.aspx">Mens</asp:HyperLink>
+                        &nbsp; |&nbsp;&nbsp; 
+                        <asp:HyperLink ID="womensHyperlink" runat="server" ForeColor="White" NavigateUrl="~/Womans.aspx">Womens</asp:HyperLink>
+                        &nbsp; |&nbsp; 
+                        <asp:HyperLink ID="kidsHyperLink" runat="server" ForeColor="White" NavigateUrl="~/Kids.aspx">Kids</asp:HyperLink>
+                        &nbsp;|</span></p>
                     </td>
                     <td class="auto-style7">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="16px" Width="146px"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
                         <asp:Button ID="Button1" runat="server" CssClass="auto-style6" Text="Search" Width="89px" />
                     </td>
-                    <td class="auto-style2"><span class="newStyle2">
+                    <td class="auto-style2"><span class="newStyle2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:HyperLink ID="cartHyperLink" runat="server" NavigateUrl="~/Cart.aspx" ForeColor="White">Cart</asp:HyperLink>
                         &nbsp;
-                        <asp:Image ID="Image1" runat="server" Height="19px" ImageUrl="~/Images/shopping_cart.png" Width="24px" />
+                        <asp:Image ID="Image1" runat="server" Height="32px" ImageUrl="~/Images/shopping_cart.png" Width="33px" />
                         </span> </td>
                 </tr>
             </table>

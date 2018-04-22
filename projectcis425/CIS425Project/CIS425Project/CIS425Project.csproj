@@ -148,8 +148,11 @@
     <Content Include="Images\3415dd9da8f772127b67b3ad5f43756e.jpg" />
     <Content Include="Images\NikeAd.jpg" />
     <Content Include="Images\shopping_cart.png" />
+    <Content Include="Kids.aspx" />
+    <Content Include="Mens.aspx" />
     <Content Include="Project.css" />
     <Content Include="Project.Master" />
+    <Content Include="Womans.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -237,6 +240,20 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Kids.aspx.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kids.aspx.designer.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mens.aspx.cs">
+      <DependentUpon>Mens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mens.aspx.designer.cs">
+      <DependentUpon>Mens.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Project.Master.cs">
       <DependentUpon>Project.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -272,6 +289,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Womans.aspx.cs">
+      <DependentUpon>Womans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Womans.aspx.designer.cs">
+      <DependentUpon>Womans.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
