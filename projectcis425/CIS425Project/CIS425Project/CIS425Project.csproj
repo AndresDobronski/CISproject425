@@ -145,6 +145,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Home.aspx" />
+    <Content Include="Images\3415dd9da8f772127b67b3ad5f43756e.jpg" />
     <Content Include="Images\NikeAd.jpg" />
     <Content Include="Images\shopping_cart.png" />
     <Content Include="Project.css" />

@@ -20,7 +20,7 @@
         }
         .auto-style3 {
             height: 24px;
-            width: 412px;
+            width: 815px;
             color: white;
         }
         .auto-style4 {
@@ -31,11 +31,11 @@
         }
         .auto-style7 {
             height: 24px;
-            width: 523px;
+            width: 358px;
         }
         .auto-style8 {
             height: 24px;
-            width: 194px;
+            width: 54px;
         }
         .newStyle1 {
             color: #FFFFFF;
@@ -50,6 +50,10 @@
         .newStyle4 {
             color: #FFFFFF;
         }
+        .auto-style10 {
+            width: 94px;
+            height: 86px;
+        }
     </style>
 </head>
 <body>
@@ -60,22 +64,24 @@
         &nbsp;
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3"><p class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle4">&nbsp;
-                        <asp:HyperLink ID="homeHyperLink" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-                        &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="mensHyperlink" runat="server">Mens</asp:HyperLink>
-                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <td class="auto-style3"><p class="newStyle1"><span class="newStyle4">&nbsp;&nbsp;&nbsp;
+                        <img alt="" class="auto-style10" src="Images/3415dd9da8f772127b67b3ad5f43756e.jpg" /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle4">&nbsp;
+                        <asp:HyperLink ID="homeHyperLink" runat="server" NavigateUrl="~/Home.aspx" ForeColor="White">Home</asp:HyperLink>
+                        &nbsp;&nbsp; |&nbsp; &nbsp;<asp:HyperLink ID="mensHyperlink" runat="server">Mens</asp:HyperLink>
+                        &nbsp;&nbsp; |&nbsp;&nbsp; 
                         <asp:HyperLink ID="womensHyperlink" runat="server">Womens</asp:HyperLink>
-                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 
                         <asp:HyperLink ID="kidsHyperLink" runat="server">Kids</asp:HyperLink>
-                        &nbsp;&nbsp;&nbsp;&nbsp; |</span></p> </td>
-                    <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="25px" Width="423px"></asp:TextBox>
+                        &nbsp;&nbsp;&nbsp; |</span></p>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="16px" Width="146px"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
-                        <asp:Button ID="Button1" runat="server" CssClass="auto-style6" Text="Search" Width="144px" />
+                        <asp:Button ID="Button1" runat="server" CssClass="auto-style6" Text="Search" Width="89px" />
                     </td>
-                    <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="newStyle2">
-                        <asp:HyperLink ID="cartHyperLink" runat="server" NavigateUrl="~/Cart.aspx">Cart</asp:HyperLink>
+                    <td class="auto-style2"><span class="newStyle2">
+                        <asp:HyperLink ID="cartHyperLink" runat="server" NavigateUrl="~/Cart.aspx" ForeColor="White">Cart</asp:HyperLink>
                         &nbsp;
                         <asp:Image ID="Image1" runat="server" Height="19px" ImageUrl="~/Images/shopping_cart.png" Width="24px" />
                         </span> </td>
@@ -95,9 +101,9 @@
 
         <span class="newStyle3">
         <br />
-        <asp:HyperLink ID="aboutUsHyperlink" runat="server">About Us </asp:HyperLink>
+        <asp:HyperLink ID="aboutUsHyperlink" runat="server" ForeColor="White" NavigateUrl="~/aboutUs.aspx">About Us </asp:HyperLink>
         <br />
-        <asp:HyperLink ID="contactHyperLink" runat="server">Contact</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" NavigateUrl="~/Contacts.aspx">Contact Us</asp:HyperLink>
         <br />
         </span></footer>
     </form>
