@@ -11,41 +11,5 @@ namespace CIS425Project {
     
     
     public partial class Cart {
-        
-        /// <summary>
-        /// costOfItemsLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label costOfItemsLabel;
-        
-        /// <summary>
-        /// applicableTaxLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label applicableTaxLabel;
-        
-        /// <summary>
-        /// shippingCostLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label shippingCostLabel;
-        
-        /// <summary>
-        /// totalCostLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label totalCostLabel;
     }
 }
