@@ -256,3 +256,6 @@ D:\Users\jmattouk\Source\Repos\CISproject425\projectcis425\CIS425Project\CIS425P
 D:\Users\jmattouk\Source\Repos\CISproject425\projectcis425\CIS425Project\CIS425Project\obj\Debug\CIS425Project.csproj.CopyComplete
 D:\Users\jmattouk\Source\Repos\CISproject425\projectcis425\CIS425Project\CIS425Project\obj\Debug\CIS425Project.dll
 D:\Users\jmattouk\Source\Repos\CISproject425\projectcis425\CIS425Project\CIS425Project\obj\Debug\CIS425Project.pdb
+C:\Users\Andres\Desktop\CISProject425\projectcis425\CIS425Project\CIS425Project\bin\MySql.Data.dll
+C:\Users\Andres\Desktop\CISProject425\projectcis425\CIS425Project\CIS425Project\bin\Google.Protobuf.dll
+C:\Users\Andres\Desktop\CISProject425\projectcis425\CIS425Project\CIS425Project\bin\MySql.Data.xml
