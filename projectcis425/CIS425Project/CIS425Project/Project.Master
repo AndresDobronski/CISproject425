@@ -76,10 +76,10 @@
                     </td>
                     <td class="auto-style7">
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style4" Height="16px" Width="146px"></asp:TextBox>
+                        <asp:TextBox ID="SearchbarTextBox" runat="server" CssClass="auto-style4" Height="16px" Width="146px"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
-                        <asp:Button ID="Button1" runat="server" CssClass="auto-style6" Text="Search" Width="89px" />
+                        <asp:Button ID="SearchButton" runat="server" CssClass="auto-style6" Text="Search" Width="89px" OnClick="SearchButton_Click" PostBackUrl="~/SearchResults.aspx" />
                     </td>
                     <td class="auto-style2"><span class="newStyle2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:HyperLink ID="cartHyperLink" runat="server" NavigateUrl="~/Cart.aspx" ForeColor="White">Cart</asp:HyperLink>

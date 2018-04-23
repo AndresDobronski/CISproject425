@@ -67,22 +67,22 @@ namespace CIS425Project {
         protected global::System.Web.UI.WebControls.HyperLink kidsHyperLink;
         
         /// <summary>
-        /// TextBox1 control.
+        /// SearchbarTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox SearchbarTextBox;
         
         /// <summary>
-        /// Button1 control.
+        /// SearchButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button SearchButton;
         
         /// <summary>
         /// cartHyperLink control.

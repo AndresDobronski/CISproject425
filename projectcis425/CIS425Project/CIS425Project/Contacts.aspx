@@ -33,12 +33,17 @@
             height: 85px;
             width: 235px;
         }
+        .auto-style21 {
+            width: 724px;
+            height: 86px;
+            margin-top: 0px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Contacts<span class="newStyle4">ontacts</span></h1>
 &nbsp;
-    <table class="auto-style10">
+    <table class="auto-style21">
         <tr>
             <td class="auto-style15">Order &amp; Products:</td>
             <td class="auto-style18">623-452-1345</td>
