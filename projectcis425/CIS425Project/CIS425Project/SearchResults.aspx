@@ -5,7 +5,7 @@
     <h2>Search Result for
     <asp:Label ID="SearchLabel" runat="server"></asp:Label>
 </h2>
-    <asp:Table ID="TableSearch" runat="server" Height="75px" Width="334px">
+    <asp:Table ID="TableSearch" runat="server" Height="81px" Width="983px">
     </asp:Table>
 <p>
     &nbsp;</p>
