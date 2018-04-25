@@ -20,9 +20,7 @@ namespace CIS425Project
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //this doesn't work yet
-            //still need to figure out how to get the text from the textbox from any page
-            //the textbox might be empty when its going to the next page
+            
 
             if (Page.PreviousPage != null)
             {
@@ -33,22 +31,13 @@ namespace CIS425Project
                 }
             }
 
-            //still gives errors about saying "the connection is open"
             Globals.conn.Open();
-            
-                
-           //might want to make a parameter instead of using the label.
-           //makes it easier to search
-
-            
             
             string query = "SELECT * FROM product WHERE Name LIKE '%"+ SearchLabel.Text + "%'" +
                 "OR Description LIKE '%" + SearchLabel.Text + "%'" +
                 "OR ID LIKE '%" + SearchLabel.Text + "%';";
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, Globals.conn);
-
-            
 
             var reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -71,8 +60,15 @@ namespace CIS425Project
                 //still needs to get styled so it looks the same as other pages
                 Image productImage = new Image();
                 productImage.ImageUrl = imageLink.ToString();
+                productImage.Style.Add("width", "200px");
 
                 //still need to add a button to the button cell
+                Button BuyButton = new Button();
+                BuyButton.Text = "Add to Cart";
+                //need to add an event for each button 
+                //BuyButton.Click = new EventHandler()
+
+                BuybuttonCell.Controls.Add(BuyButton);
                 nameCell.Text = productName.ToString();
                 priceCell.Text = productPrice.ToString();
                 imageCell.Controls.Add(productImage);
