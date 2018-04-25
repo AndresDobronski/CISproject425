@@ -24,9 +24,14 @@ namespace CIS425Project
             //still need to figure out how to get the text from the textbox from any page
             //the textbox might be empty when its going to the next page
 
-           
-            TextBox searchBox = (TextBox)Page.PreviousPage.Master.FindControl("SearchbarTextBox");
-            SearchLabel.Text = searchBox.Text;
+            if (Page.PreviousPage != null)
+            {
+                TextBox searchBox = (TextBox)Page.PreviousPage.Master.FindControl("SearchbarTextBox");
+                if (searchBox != null)
+                {
+                    SearchLabel.Text = searchBox.Text;
+                }
+            }
 
             //still gives errors about saying "the connection is open"
             Globals.conn.Open();
