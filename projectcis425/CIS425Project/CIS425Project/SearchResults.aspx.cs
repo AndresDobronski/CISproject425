@@ -22,16 +22,11 @@ namespace CIS425Project
         {
             //this doesn't work yet
             //still need to figure out how to get the text from the textbox from any page
+            //the textbox might be empty when its going to the next page
 
-            if (Page.PreviousPage != null)
-            {
-                TextBox searchBox = (TextBox)Page.PreviousPage.FindControl("SearchbarTextBox");
-
-                if (searchBox != null)
-                {
-                    SearchLabel.Text = searchBox.Text;
-                }
-            }
+           
+            TextBox searchBox = (TextBox)Page.PreviousPage.Master.FindControl("SearchbarTextBox");
+            SearchLabel.Text = searchBox.Text;
 
             //still gives errors about saying "the connection is open"
             Globals.conn.Open();
@@ -40,9 +35,16 @@ namespace CIS425Project
            //might want to make a parameter instead of using the label.
            //makes it easier to search
 
-            string query = "SELECT * FROM product WHERE Name LIKE '%"+ SearchLabel.Text +"%';";
+            
+            
+            string query = "SELECT * FROM product WHERE Name LIKE '%"+ SearchLabel.Text + "%'" +
+                "OR Description LIKE '%" + SearchLabel.Text + "%'" +
+                "OR ID LIKE '%" + SearchLabel.Text + "%';";
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, Globals.conn);
+
+            
+
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {

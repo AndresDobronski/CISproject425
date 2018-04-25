@@ -9,7 +9,11 @@ namespace CIS425Project
 {
     public partial class Project : System.Web.UI.MasterPage
     {
-        public string searchWord;
+        public string SearchBox
+        {
+            get { return SearchbarTextBox.Text; }
+            set { SearchbarTextBox.Text = value; }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,7 +21,7 @@ namespace CIS425Project
 
         protected void SearchButton_Click(object sender, EventArgs e)
         {
-            Server.Transfer("SearchResults.aspx", true);
+            Server.Transfer("SearchResults.aspx");
 
         }
     }
