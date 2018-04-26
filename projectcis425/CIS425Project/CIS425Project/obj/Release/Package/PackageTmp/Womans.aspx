@@ -17,7 +17,7 @@
                     </tr>
                 </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT ID, Name, Description, Price, imageUrl, Department FROM product WHERE Department='Womens';"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Driver={MySQL ODBC 5.3 Unicode Driver};server=cis425.wpcarey.asu.edu;uid=adobrons;pwd=thickTHREE30;database=groupa06;SslMode=none" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT ID, Name, Description, Price, imageUrl, Department FROM product WHERE Department='Womens';"></asp:SqlDataSource>
     </table>
      <br />
     </p>
