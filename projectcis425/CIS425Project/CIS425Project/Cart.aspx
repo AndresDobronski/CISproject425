@@ -15,25 +15,14 @@
         width: 106px;
     }
     .auto-style14 {
-        width: 113%;
+        width: 116%;
         height: 145px;
     }
     .auto-style15 {
         width: 353px;
         height: 188px;
     }
-    .auto-style16 {
-        height: 39px;
-    }
-    .auto-style17 {
-        width: 106px;
-        height: 39px;
-    }
     .auto-style18 {
-        height: 54px;
-    }
-    .auto-style19 {
-        width: 106px;
         height: 54px;
     }
     </style>
@@ -68,10 +57,9 @@
             <td class="auto-style13" id="cartTax"></td>
         </tr>
         <tr>
-            <td class="auto-style16">Shipping Cost </td>
-            <td class="auto-style16"></td>
-            <td class="auto-style17">
-            </td>
+            <td>Shipping Cost </td>
+            <td>&nbsp;</td>
+            <td class="auto-style13" id="cartShipping"></td>
         </tr>
         <tr>
             <td class="auto-style18">Total Cost </td>
@@ -80,6 +68,8 @@
         </tr>
     </table>
 </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="cancelButton" runat="server" BackColor="Red" ForeColor="Black" Text="Cancel Purchase" />
 <br />
 <br />
 <br />
@@ -102,11 +92,25 @@
                         total_cost = total_cost + cart_data[key]["qty"] * cart_data[key]["price"];
                     }
                 });
-                $("#cartCost").text("$"+total_cost);
+                $("#cartCost").text("$" + total_cost);
+                
                 tax = total_cost * 0.07
-                $("#cartTax").text("$" +tax);
-                total = tax + total_cost;
-                $("#cartTotal").text("$"+total)
+                $("#cartTax").text("$" + tax);
+
+                shipping = total_cost * .01
+                $("#cartShipping").text("$" + shipping);
+             
+                total = tax + total_cost + shipping;              
+                $("#cartTotal").text("$" + total)
+
+                //if (.cancelbuttion.click == true) {
+                //    $(".cancelButton").click(function () {
+                //        cart_data = { 'garbage': 'to make this a non-empty object' };
+                //        console.log('new cookie!');
+                //    }
+                //}
+
+
             });
         </script>
     
