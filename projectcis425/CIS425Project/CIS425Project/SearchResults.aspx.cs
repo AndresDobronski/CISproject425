@@ -12,15 +12,16 @@ namespace CIS425Project
 {
     public partial class SearchResults : System.Web.UI.Page
     {
-        public static class Globals    
+        public static class Globals
         {
             public static string dbConnectionString = "server=cis425.wpcarey.asu.edu;uid=adobrons;pwd=thickTHREE30;database=groupa06;SslMode=none";
 
             public static MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(dbConnectionString);
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
 
             if (Page.PreviousPage != null)
             {
@@ -32,22 +33,23 @@ namespace CIS425Project
             }
 
             Globals.conn.Open();
-            
-            string query = "SELECT * FROM product WHERE Name LIKE '%"+ SearchLabel.Text + "%'" +
-                "OR Description LIKE '%" + SearchLabel.Text + "%'" +
-                "OR ID LIKE '%" + SearchLabel.Text + "%';";
+
+            string query = "SELECT * FROM product WHERE Name LIKE '%" + SearchLabel.Text + "%'" +
+            "OR Description LIKE '%" + SearchLabel.Text + "%'" +
+            "OR ID LIKE '%" + SearchLabel.Text + "%';";
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, Globals.conn);
 
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
+                var productID = reader["ID"].ToString();
                 var productName = reader["Name"];
                 var productPrice = reader["Price"];
                 var imageLink = reader["imageUrl"];
                 var productdescrpt = reader["Description"];
 
-                
+
                 //makes a table row and cells 
                 TableRow tRow = new TableRow();
                 TableCell BuybuttonCell = new TableCell();
@@ -56,33 +58,35 @@ namespace CIS425Project
                 TableCell priceCell = new TableCell();
                 TableCell imageCell = new TableCell();
 
-                //created an image control
-                //still needs to get styled so it looks the same as other pages
-                Image productImage = new Image();
+                //created an image control
+                //still needs to get styled so it looks the same as other pages
+                Image productImage = new Image();
                 productImage.ImageUrl = imageLink.ToString();
                 productImage.Style.Add("width", "200px");
 
-                //still need to add a button to the button cell
-                Button BuyButton = new Button();
+                //still need to add a button to the button cell
+                Button BuyButton = new Button();
+                BuyButton.ID = productID;
                 BuyButton.Text = "Add to Cart";
-                //need to add an event for each button 
-                //BuyButton.Click = new EventHandler()
+                //need to add an event for each button 
+                //BuyButton.Click = new EventHandler()
 
-                BuybuttonCell.Controls.Add(BuyButton);
+                BuybuttonCell.Controls.Add(BuyButton);
                 nameCell.Text = productName.ToString();
                 priceCell.Text = productPrice.ToString();
                 imageCell.Controls.Add(productImage);
                 descriptionCell.Text = productdescrpt.ToString();
 
                 //added the cells into the row
+                tRow.CssClass = "data-" + productID.ToString();
                 tRow.Cells.Add(BuybuttonCell);
                 tRow.Cells.Add(nameCell);
                 tRow.Cells.Add(descriptionCell);
                 tRow.Cells.Add(priceCell);
                 tRow.Cells.Add(imageCell);
 
-                //added the row into the table
-                TableSearch.Rows.Add(tRow);
+                //added the row into the table
+                TableSearch.Rows.Add(tRow);
             }
 
             reader.Close();
