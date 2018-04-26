@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-       <h1>Mens Options</h1> <br />
-        
+       <h1>Mens Options</h1> 
+    </p>
+        <br />     
         <table style="width: 100%;">
             <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged1">
                 <ItemTemplate>
@@ -15,7 +16,8 @@
                         <td><asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Price") %>' /></td>
                         <td><img src='<%# Eval("imageUrl") %>' width='200px' /></td>
                     </tr>
-                </ItemTemplate></asp:DataList>
+                </ItemTemplate>
+            </asp:DataList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT ID, Name, Description, Price, imageUrl, Department FROM product WHERE Department='Mens';"></asp:SqlDataSource>
         </table>
         <script>
@@ -53,5 +55,5 @@
                 });
             });
         </script>
-    </p>
+    
 </asp:Content>
